@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Map</title>
+    
+    <!-- DISABLE ZOOM -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+    <!-- STYLES -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <!-- JSON -->
+    <script src="js/data.js" type="text/javascript"></script>
+    
+    <!-- use only version 3.20 of Google Maps API -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20&sensor=false"></script>
+    
+    <!-- JAVASCRIPT -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/markerclusterer_compiled.js" type="text/javascript"></script>
+    <script src="js/markerclusterer.js" type="text/javascript"></script>
+
+  </head>
+ 
+  <body>
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
+
+<div id="navigation">
+    
+    <div id="legend"><a href="index.html">
+        <div id="legend_top"><img src="img/logo.png" alt="" class="legend_logo"></div>
+        <div id="legend_content">
+            <table cellspacing="10">
+              <tbody>
+                <tr>
+                  <td><img src="img/heart_brown_30.png" alt="" class="legend_pin"></td>
+                  <td>Butlers Chocolate Café</td>
+                </tr>
+                <tr>
+                  <td><img src="img/diamond_brown_30.png" alt="" class="legend_pin"></td>
+                  <td>Butlers Chocolate <br>Café Franchise</td>
+                </tr>
+                <tr>
+                  <td><img src="img/dot_brown_30.png" alt="" class="legend_pin"></td>
+                  <td>Butlers Chocolates <br>International Locations</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+       </a>
+	</div>
+    
+    <div id="instagram">
+        <div id="instagram_content">
+            <table cellspacing="10">
+              <tbody>
+                <tr>
+                  <td><img src="img/instagram_gold.png" alt="" class="instagram_icon"></td>
+                  <td>I n s t a g r a m</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+	</div>
+
+</div> 
+    
+<div id="inline-actions">
+      <span>Max zoom level:
+        <select id="zoom">
+          <option value="-1">Default</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+        </select>
+
+      </span>
+      <span class="item">Cluster size:
+        <select id="size">
+          <option value="-1">Default</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+          <option value="70">70</option>
+          <option value="80">80</option>
+        </select>
+      </span>
+      <span class="item">Cluster style:
+        <select id="style">
+          <option value="0">Default</option>
+       </select>
+       <input id="refresh" type="button" value="Refresh Map" class="item"/>
+       <a href="#" id="clear">Clear</a>
+       </span>
+    </div>
+    
+  <div class="hide_google"></div>
+  </body>
+  
+</html>

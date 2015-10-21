@@ -1,0 +1,230 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+		/* DISABLE SELECT & HIGHLIGHT TEXT */
+	-webkit-user-select: none;
+	user-select: none;
+	overflow: hidden;
+}
+a { color: inherit !important }
+
+/* =================== FONTS =================== */
+
+@font-face {
+    font-family: Museo Slab 700;
+    src: url(../examples/css/fonts/MuseoSlab-700.otf);
+}
+@font-face {
+    font-family: Museo Slab 500;
+    src: url(../examples/css/fonts/MuseoSlab-500.otf);
+}
+@font-face {
+    font-family: Futura Book;
+    src: url(../examples/css/fonts/FuturaBook.ttf);
+}
+@font-face {
+    font-family: Futura Bold;
+    src: url(../examples/css/fonts/FuturaBold.ttf);
+}
+
+.gm-style {
+    font-family: 'Museo Slab 500' !important;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+	color: #b5975d !important;
+  }
+
+/* =================== COLORS =================== */
+
+.oceans { color: #fec33b; }
+.land { color: #fef8e2; }
+.borders { color: #e8a435; }
+.countries { color: #b5975d; }
+.grey { color: #333333; }
+.light_grey { color: #666666; }
+
+/* COLORS from Butlers Brand Guidelines */
+.brown {color: #53301b;}
+.gold {color: #b5975d;}
+.yellow {color: #fec33b;}
+.cream {color: #fff9e1;}
+.red {color: #d21749;}
+.pink {color: #ec5293;}
+.aqua {color: #00b0af;}
+
+/* COLORS from Butlers Timeline */
+.beigeT {color: #eae0bd;}
+.lightBlueT {color: #a6c8bc;}
+.aquaT {color: #00bac6;}
+.coralT {color: #d23e26;}
+.violetT {color: #a16a8d;}
+.greenT {color: #639d7e;}
+.blueT {color: #4ba6dd;}
+.orangeT {color: #e4841c;}
+.yellowT {color: #fec325;}
+
+/* PANTONE COLORS to RGB */
+.pantone_blue {color: #004976;}
+.pantone_cream {color: #;}
+.pantone_red {color: #AB2328;}
+.pantone_yellow {color: #FF9E1B;}
+.pantone_green {color: #279989;}
+.pantone_brown {color: #;}
+.pantone_purple {color: #;}
+
+.static_map {
+	width: 110%;
+	margin-top: -5%;
+	margin-left:-7%;
+}
+
+#map-container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#map {
+	width: 100%;
+	height: 1000px;
+}
+#actions {
+	list-style: none;
+	padding: 0;
+}
+#inline-actions {
+	padding-top: 10px;
+	visibility: hidden;
+}
+.item {
+	margin-left: 20px;
+}
+
+#map-canvas {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	max-width: none;
+}
+#map-canvas img {
+	max-width: none !important;
+}
+.gm-style-iw {
+	width: 350px !important;
+	top: 15px !important;
+	left: 0px !important;
+	background-color: #fff;
+	box-shadow: 0 1px 2px #000000;
+	border-radius: 5px 5px 5px 5px;
+	/*border: 1px solid #AB2328;*/
+}
+#iw-container {
+	margin-bottom: 10px;
+}
+#iw-container .iw-title {
+	font-family: 'Museo Slab 700';
+	font-size: 22px;
+	font-weight: 400;
+	padding: 10px;
+	background-color: #53301b;
+	color: white;
+	margin: 0;
+	border-radius: 2px 2px 0 0;
+}
+#iw-container {
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#iw-container p {
+	font-family: 'Museo Slab 500';
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	padding: 5px 20px 0 20px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	color: #555555;
+}
+.iw-content img {
+	margin: 0;	
+}
+.iw-subTitle {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 0;
+}
+#navigation {
+	position: absolute;
+	left: 2%;
+	bottom: 2%;
+	font-family: 'Museo Slab 700';
+}
+/* L E G E N D */
+a {
+	text-decoration: none;
+}
+#legend {
+	
+	font-size: 9px;
+    background: #fff9e1;
+	color: #53301b;
+    padding: 0 0 7px 0;
+	box-shadow: 0 1px 2px #000000;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+#legend_top {
+	background-color: #53301b;
+	/*background-color: #53301b;*/
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+	margin-top: 0;
+}
+#legend_content {
+	margin-left: 5px;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+.legend_pin {
+	width: 14px;
+	padding-right: 5px;
+}
+.legend_logo {
+	width: 110px;
+	margin-top: 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#legend table {
+	margin-top: 5px;
+}
+/* I N S T A G R A M */
+#instagram {
+	font-size: 9px;
+    background: #53301b;
+	/*background: #004976;*/
+	color: #b5975d;
+    padding: 0;
+	box-shadow: 0 1px 2px #000000;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+#instagram_content {
+	margin-left: 5px;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+.instagram_icon {
+	width: 14px;
+	padding-right: 5px;
+}
